@@ -14,7 +14,7 @@ body{
     background: url("../img/background.jpg") no-repeat center;
 }
 .container{
-   width: 1020px;
+    width: 1020px;
     margin: 0 auto;
 }
 .header-logo{
@@ -87,7 +87,7 @@ body{
 
 
 .new-kvast{
-    margin-top: 96px;
+    margin-top: 97px;
 }
 .new{
     display: flex;
@@ -100,31 +100,48 @@ h2{
     margin-left: 60px;
 }
 .item-kvast{
+    width: 343px;
+    height: 600px;
     position: relative;
-    padding: 30px;
-    padding-top: 0;
+    padding: 11px 30px 50px 30px;
     border-left: 1px solid grey;
 
 }
 .new-romantik{
     border-right: 1px solid grey;
 }
-.description-new{
+.table-item {
+    display: table;
+    width:150px;
+    top:30px;
     position: absolute;
-    left: 200px;
+    left: 250px;
+    border-bottom: 0.5px solid grey;
+}
+.table-item tr{
+    display: table-row;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    vertical-align: middle;
 }
 .comm{
-    top: 60px;
+    position:absolute;
+    left: 250px;
+    top: 77px;
+    font-size: 14px;
+    line-height: 18px;
 }
 .new-name{
     font-size: 36px;
     text-transform: uppercase;
 }
 .new-footer{
-    margin-top: -26px;
+    margin-top: -25px;
 }
 .new-footer p{
-    margin-top: -2px;
+    margin-top: -3px;
     line-height: 16px;
 }
 .btn1, .btn2{
@@ -134,7 +151,7 @@ h2{
     text-transform: uppercase;
     text-decoration: none;
     vertical-align: middle;
-    line-height: 46px;
+    line-height: 45px;
     font-size: 14px;
     font-weight: 700;
 }
@@ -142,17 +159,21 @@ h2{
     width: 142px;
     height: 42px;
     color: #834700;
-    margin-right:5px;
+    margin-right: 5px;
 }
-
 .btn2{
     width: 106px;
     height: 42px;
     background-color: #834700;
     color: white;
-    margin-right:30px;
+    margin-right: 30px;
+}
+b{
+    font-size: 12px;
 }
 
-b{
-    font-size:12px;
+.features{
+    height: 400px;
+    background: #ffcb78;
+    margin-top: 89px;
 }
