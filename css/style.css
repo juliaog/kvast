@@ -209,8 +209,6 @@ b{
 }
 .description{
    position: relative;
-
-
 }
 .description h3{
     text-transform: uppercase;
@@ -232,9 +230,46 @@ b{
 }
 
 
-
-
 .press{
      background: #ede5d8;
      height: 480px;
  }
+.press_comm h2{
+    padding-top: 100px;
+    margin-bottom: 83px;
+}
+.press_comm p{
+    color: #434446;
+    line-height: 32px;
+}
+.press_comm .btn1{
+    width: 166px;
+    height: 46px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-color: #a69f95;
+    color: #c0b8ad;
+}
+.press_comm .cite{
+    float: right;
+    margin-right: 128px;
+    padding-top: 8px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.prise-list{
+    height: 556px;
+    margin-top: 110px;
+}
+
+
+
+
+
+
+
+.form{
+    background: #ffcb78;
+}
