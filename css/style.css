@@ -14,11 +14,10 @@ body{
     background: url("../img/background.jpg") no-repeat center;
 }
 .container{
-    width: 1020px;
+    width: 900px;
     margin: 0 auto;
 }
 .header-logo{
-    margin-left: 60px;
     float: left;
 }
 .clearfix::after{
@@ -70,7 +69,6 @@ body{
     text-align: center;
     margin-left: 30px;
 }
-
 .switch .slide-icon{
     display: inline-block;
     margin-top: 148px;
@@ -92,28 +90,25 @@ body{
 .new{
     display: flex;
     margin-top: 107px;
-    margin-left: 60px;
 }
 h2{
     font-size: 36px;
     text-transform: uppercase;
-    margin-left: 60px;
 }
 .item-kvast{
     width: 343px;
     height: 600px;
     position: relative;
-    padding: 11px 30px 50px 30px;
+    padding: 0 30px 50px 30px;
     border-left: 1px solid grey;
-
 }
 .new-romantik{
     border-right: 1px solid grey;
 }
 .table-item {
     display: table;
-    width:150px;
-    top:30px;
+    width: 150px;
+    top: 30px;
     position: absolute;
     left: 250px;
     border-bottom: 0.5px solid grey;
@@ -127,9 +122,9 @@ h2{
     vertical-align: middle;
 }
 .comm{
-    position:absolute;
+    position: absolute;
     left: 250px;
-    top: 77px;
+    top: 68px;
     font-size: 14px;
     line-height: 18px;
 }
@@ -157,19 +152,19 @@ h2{
 }
 .btn1{
     width: 142px;
-    height: 42px;
+    height: 43px;
     color: #834700;
     margin-right: 5px;
 }
 .btn2{
-    width: 106px;
-    height: 42px;
+    width: 101px;
+    height: 43px;
     background-color: #834700;
     color: white;
     margin-right: 30px;
 }
 b{
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .features{
@@ -177,3 +172,69 @@ b{
     background: #ffcb78;
     margin-top: 89px;
 }
+.feature-item {
+    margin-left:-20px;
+}
+.feature-item li{
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: bottom;
+    width:210px;
+    height:230px;
+    text-align: left;
+    margin-top: 110px;
+    border-right: 1px solid #e7b66a;
+    padding: 0 40px;
+    color: #434446;
+    line-height: 26px;
+}
+.feature-item h4{
+    margin-top: 23px;
+    color: black;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.feature-item li:last-child{
+    border-right: none;
+    padding-right: 0px;
+}
+
+
+.history{
+    height: 517px;
+    margin-top: 87px;
+}
+.history-item{
+    margin-top: 100px;
+}
+.description{
+   position: relative;
+
+
+}
+.description h3{
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.description p{
+    margin: 40px 0;
+    line-height: 26px;
+}
+.link{
+    position: absolute;
+    right: 515px;
+}
+.link img{
+    margin-top:37px;
+}
+.ist a{
+    color: #894a03;
+}
+
+
+
+
+.press{
+     background: #ede5d8;
+     height: 480px;
+ }
