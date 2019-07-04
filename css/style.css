@@ -52,7 +52,7 @@ body{
     font-weight: bold;
     font-size: 15px;
 }
-.main-menu li, btn1, btn2:hover{
+.main-menu li, .btn1, .btn2:hover{
     cursor: pointer;
 }
 .main-nav li{
@@ -234,11 +234,13 @@ b{
      background: #ede5d8;
      height: 480px;
  }
-.press_comm h2{
+.press_comm h2,
+.form h2{
     padding-top: 100px;
     margin-bottom: 83px;
 }
-.press_comm p{
+.press_comm p,
+.form p{
     color: #434446;
     line-height: 32px;
 }
@@ -313,7 +315,65 @@ td:nth-child(2),td:nth-child(3),td:nth-child(4)
 }
 
 
-
 .form{
+    height: 1090px;
     background: #ffcb78;
+}
+.form p{
+    padding-top: 10px;
+    margin-bottom: 71px;
+}
+.form label{
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 50px;
+    width: 199px;
+    height: 50px;
+
+}
+.form-order-group{
+    margin-bottom: 10px;
+}
+.form-order input[type="text"],
+.form-order select,
+.form-order textarea{
+    width: 580px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 50px;
+    padding-left: 20px;
+    background: #e6b66c;
+    border: none;
+    height: 50px;
+}
+.form select{
+    width: 600px;
+    color: #b49157;
+    cursor: default;
+}
+::placeholder{
+     color: #b49157;
+ }
+.form-order option{
+    font-size: 20px;
+}
+#com{
+    vertical-align: top;
+}
+.form-order textarea{
+    height: 150px;
+}
+#phone,#phone2{
+    width: 180px;
+}
+.second_phone{
+    width: 110px;
+    margin-left: 48px;
+}
+#phone2{
+margin-left: -56px;
 }

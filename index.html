@@ -208,40 +208,38 @@
 
 
  <div class = "form">
+     <div class="container">
      <h2>Заказать</h2>
-     <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 <br>
+     <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите <br>настоящий крафтовый квас сейчас. При заказе от 10
          баррелей — скидка 10%.
      </p>
-     <form class = "form-order" action = "/keksby-mail" method = "post">
+     <form class = "form-order" action = "/-mail" method = "post">
         <div class = "form-order-group">
-            <label>
-                Представьтесь: <input type = "text" name = "name">
-            </label>
+            <label for="name"> Представьтесь: </label>
+            <input type = "text" name = "name" id="name"
+                   placeholder="Как мы можем к вам обращаться?" required>
         </div>
         <div class = "form-order-group">
-            <label>
-                Номер телефона: <input type = "text" name = "phone">
-            </label>
-        </div>
+            <label for="phone">Номер телефона:</label>
+            <input type = "text" name = "phone" id="phone" placeholder="+7(XXX)XXX-XX-XX">
+            <label class="second_phone" for="phone2">Доп. номер:</label>
+            <input type = "text" name = "phone2" id="phone2" placeholder="+7(XXX)XXX-XX-XX">
+         </div>
         <div class = "form-order-group">
-            <label>
-                Доп. номер: <input type = "text" name = "phone2">
-            </label>
-        </div>
-        <div class = "form-order-group">
-            <label>
-                Email: <input type = "text" name = "email">
-            </label>
+            <label for="email">Email:</label>
+            <input type = "text" name = "email" id="email" placeholder="Ваша электронная почта" required>
         </div>
         <div class = "form-order-group">
             <label for = "amount">Объем заказа:</label>
             <select name = "amount" id = "amount">
                 <option>От 5 до 10 баррелей в неделю</option>
+                <option>Возврат товара</option>
+                <option>Жалоба в Роспотребнадзор</option>
             </select>
         </div>
         <div class = "form-order-group">
-           <label for = "comment">Доп. комментарий:</label>
-            <textarea name = "comment" id = "comment" rows = 10 cols = "96"></textarea>
+           <label id="com" for = "comment">Доп. комментарий:</label>
+            <textarea name = "comment" id = "comment" placeholder="Сообщите нам всё, что считаете нужным"></textarea>
         </div>
         <div class = "checkbox-area">
             <label>
@@ -249,9 +247,10 @@
             Я согласен получать квасную рассылку
             </label>
         </div>
-        <input type = "submit" value = "Отправить заказ">
+        <input type = "button" value = "Отправить заказ">
      </form>
   </div>
+ </div>
 
  <div class = "page-footer">
    <div class = "header-top">
