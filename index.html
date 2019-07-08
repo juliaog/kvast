@@ -13,11 +13,11 @@
     <div class = "header-logo">
      <img src = img/logo.png alt = "Кваст">
     </div>
-     <ul class = "main-nav ">
-      <li><a href = "#">История</a></li>
-      <li><a href = "#">Производство</a></li>
-      <li><a href = "#">Ассортимент</a></li>
-      <li><a href = "#">Где купить</a></li>
+     <ul class = "main-nav">
+      <li><a href = "#history">История</a></li>
+      <li><a href = "#features">Производство</a></li>
+      <li><a href = "#prise-list">Ассортимент</a></li>
+      <li><a href = "#form">Где купить</a></li>
      </ul>
    </div> 
   <div class = "promo change">
@@ -93,7 +93,7 @@
   <div class = "features">
       <div class="container">
   <ul class="feature-item">
-   <li>
+   <li id="features">
     <img src="img/pic1.png" alt="">
     <h4>Варим сами</h4>
     <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
@@ -113,7 +113,7 @@
   </div>
 
 
- <div class = "history">
+ <div id ="history" class = "history">
      <div class="container">
    <h2>Немного истории</h2>
          <div class="history-item">
@@ -129,7 +129,7 @@
                  других странах, но называется он везде одинаково — квас.</p>
      </div>
          <div class="link">
-             <div class="ist ist-last"><i class="ist">Источник: </i><a class="ist" target="_blank" href="https://ru.wikipedia.org">ru.wikipedia.org</a></div>
+             <div class="ist ist-last"><i class="ist">Источник: </i><a  target="_blank" href="https://ru.wikipedia.org">ru.wikipedia.org</a></div>
          <img src = "img/wiki-2.png" alt = "Википедия картинка2">
          </div>
          <div class="description">
@@ -156,10 +156,10 @@
  </div>
 
 
- <div class = "prise-list">
+ <div id="prise-list" class = "prise-list">
      <div class="container">
     <h2>Ассортимент</h2>
-    <div class="prise">
+    <div  class="prise">
     <table>
         <col width="410px">
         <col width="60px">
@@ -207,10 +207,10 @@
  </div>
 
 
- <div class = "form">
+ <div id="form" class = "form">
      <div class="container">
      <h2>Заказать</h2>
-     <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите <br>настоящий крафтовый квас сейчас. При заказе от 10
+     <p >Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите <br>настоящий крафтовый квас сейчас. При заказе от 10
          баррелей — скидка 10%.
      </p>
      <form class = "form-order" action = "/-mail" method = "post">
@@ -225,11 +225,11 @@
             <label class="second_phone" for="phone2">Доп. номер:</label>
             <input type = "text" name = "phone2" id="phone2" placeholder="+7(XXX)XXX-XX-XX">
          </div>
-        <div class = "form-order-group">
+        <div class = "form-order-group group-email">
             <label for="email">Email:</label>
             <input type = "text" name = "email" id="email" placeholder="Ваша электронная почта" required>
         </div>
-        <div class = "form-order-group">
+        <div class = "form-order-group ">
             <label for = "amount">Объем заказа:</label>
             <select name = "amount" id = "amount">
                 <option>От 5 до 10 баррелей в неделю</option>
@@ -242,39 +242,43 @@
             <textarea name = "comment" id = "comment" placeholder="Сообщите нам всё, что считаете нужным"></textarea>
         </div>
         <div class = "checkbox-area">
-            <label>
+            <label for="check">
             <input type = "checkbox" id = 'check'>
-            Я согласен получать квасную рассылку
             </label>
+            <p>Я согласен получать квасную рассылку</p>
+
         </div>
-        <input type = "button" value = "Отправить заказ">
+        <input type = "submit" value = "Отправить заказ">
      </form>
   </div>
  </div>
 
  <div class = "page-footer">
-   <div class = "header-top">
-    <div class = "header-logo">
+   <div class = " container">
+    <div class = "footer-logo">
      <img src = img/logo.png alt = "Кваст">
     </div>
-     <ul class = "main-nav-footer">
-       <li><a href = "#">История</a></li>
-       <li><a href = "#">Производство</a></li>
-       <li><a href = "#">Ассортимент</a></li>
-       <li><a href = "#">Где купить</a></li>
+     <ul class = "main-nav main-nav-footer">
+         <li><a href = "#history">История</a></li>
+         <li><a href = "#features">Производство</a></li>
+         <li><a href = "#prise-list">Ассортимент</a></li>
+         <li><a href = "#form">Где купить</a></li>
      </ul>
    </div>
   <div class = "social">
-    <a href = "https://instagram.com">Инстаграм</a>
-    <a href = "https://facebook.com">Фейсбук</a>
-    <a href = "https://vk.com">Вконтакте</a>
+      <p>Наши соц-сети:</p>
+      <div class="social-btn">
+    <a href = "https://instagram.com">
+        <img src="img/logoinst.png" alt="Инстаграм">
+    </a>
+    <a href = "https://facebook.com">
+        <img src="img/logoface.png" alt="Фейсбук">
+    </a>
+    <a href = "https://vk.com">
+        <img src="img/logovk.png" alt="Вконтакте">
+    </a>
   </div>
-  <p class = "text-footer">При перепечатке материалов ссылка на сайт обязательна!</p>
-  <div class ="razrab">
-     <img src = "img/htmlacademy.png">
-     <b>Разработчик:</b>
-     <a href ="https://htmlacademy.ru"> HTML Academy</a>
-  </div>
+ </div>
  </div>
 </body>
 </html>

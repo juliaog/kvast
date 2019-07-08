@@ -17,7 +17,8 @@ body{
     width: 900px;
     margin: 0 auto;
 }
-.header-logo{
+.header-logo,
+.footer-logo{
     float: left;
 }
 .clearfix::after{
@@ -52,8 +53,12 @@ body{
     font-weight: bold;
     font-size: 15px;
 }
-.main-menu li, .btn1, .btn2:hover{
+.main-nav li, .btn1, .btn2, input[type="submit"]:hover
+{
     cursor: pointer;
+}
+.main-nav a:hover{
+    text-decoration: underline;
 }
 .main-nav li{
     padding-top: 17px;
@@ -163,6 +168,7 @@ h2{
     color: white;
     margin-right: 30px;
 }
+
 b{
     font-size: 15px;
 }
@@ -198,7 +204,14 @@ b{
     border-right: none;
     padding-right: 0px;
 }
-
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.feature-item img:hover{
+    animation-name: rotate;
+    animation-duration: 2s;
+}
 
 .history{
     height: 517px;
@@ -207,9 +220,7 @@ b{
 .history-item{
     margin-top: 100px;
 }
-.description{
-   position: relative;
-}
+
 .description h3{
     text-transform: uppercase;
     font-size: 22px;
@@ -229,7 +240,9 @@ b{
     color: #894a03;
 }
 
-
+.ist a:visited{
+    color: #800080;
+}
 .press{
      background: #ede5d8;
      height: 480px;
@@ -251,6 +264,10 @@ b{
     margin-top: 20px;
     border-color: #a69f95;
     color: #c0b8ad;
+}
+.press_comm .btn1:hover{
+    background-color: #d4d1cd;
+    color: white;
 }
 .press_comm .cite{
     float: right;
@@ -355,6 +372,9 @@ td:nth-child(2),td:nth-child(3),td:nth-child(4)
     color: #b49157;
     cursor: default;
 }
+.form-order-group input[name="email"]{
+    margin-bottom: 55px;
+}
 ::placeholder{
      color: #b49157;
  }
@@ -377,3 +397,68 @@ td:nth-child(2),td:nth-child(3),td:nth-child(4)
 #phone2{
 margin-left: -56px;
 }
+#check{
+    width: 50px;
+    height: 50px;
+    color: #834700;
+}
+.checkbox-area p{
+}
+
+.form-order input[type="submit"]{
+    border: 2px solid #834700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 700;
+    width: 205px;
+    height: 55px;
+    background-color: #834700;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+.page-footer{
+    position: relative;
+    background: black;
+    height: 300px;
+    color: white;
+    padding-top: 50px;
+}
+
+.main-nav-footer{
+    border: none;
+}
+
+.social{
+    position: absolute;
+    top: 200px;
+    width: 400px;
+    left: 420px;
+}
+.social p {
+    color: #7d7d7d;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.social a{
+    font-size: 0;
+    text-decoration: none;
+}
+.social img:hover{
+     border: none;
+     opacity: 0.7;
+ }
+
+
