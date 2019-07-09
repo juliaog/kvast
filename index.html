@@ -90,10 +90,10 @@
   </div>
 
 
-  <div class = "features">
+  <div id="features" class = "features">
       <div class="container">
   <ul class="feature-item">
-   <li id="features">
+   <li >
     <img src="img/pic1.png" alt="">
     <h4>Варим сами</h4>
     <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
@@ -241,12 +241,9 @@
            <label id="com" for = "comment">Доп. комментарий:</label>
             <textarea name = "comment" id = "comment" placeholder="Сообщите нам всё, что считаете нужным"></textarea>
         </div>
-        <div class = "checkbox-area">
-            <label for="check">
-            <input type = "checkbox" id = 'check'>
-            </label>
-            <p>Я согласен получать квасную рассылку</p>
-
+        <div class = "checkbox"><label id="agree" for="check">
+            <input type = "checkbox" id = 'check'></label>
+            <span>Я согласен получать квасную рассылку</span>
         </div>
         <input type = "submit" value = "Отправить заказ">
      </form>
@@ -280,5 +277,6 @@
   </div>
  </div>
  </div>
+ <script src="js/script.js"></script>
 </body>
 </html>
