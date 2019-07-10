@@ -83,14 +83,14 @@
       </div>
        <a class = "btn1" href = "#">Подробнее</a>
        <a class = "btn2" href = "#">Купить</a>
-       <b>90 Р.</b>      
+       <b id="features">90 Р.</b>
       </div>
     </div>
       </div>
   </div>
 
 
-  <div id="features" class = "features">
+  <div  class = "features">
       <div class="container">
   <ul class="feature-item">
    <li >
@@ -106,14 +106,14 @@
    <li>
    <img src="img/pic3.png" alt="">
     <h4>Не экономим</h4>
-    <p>Человек это то, что он ест и пьет. У нас только качественные ингредиенты.</p>
+    <p id ="history">Человек это то, что он ест и пьет. У нас только качественные ингредиенты.</p>
    </li>
   </ul>
   </div>
   </div>
 
 
- <div id ="history" class = "history">
+ <div  class = "history">
      <div class="container">
    <h2>Немного истории</h2>
          <div class="history-item">
@@ -151,12 +151,12 @@
         <p class = "press-item">Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса.<br>
             Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку<br> своего напитка!</p>
             <a class = "btn1" href="#">Читать далее</a>
-            <p class = "cite">Газета столичный Стольник</p>
+            <p class = "cite">Газета "Cтоличный Стольник"</p>
  </div>
  </div>
 
 
- <div id="prise-list" class = "prise-list">
+ <div id="prise-list"  class = "prise-list">
      <div class="container">
     <h2>Ассортимент</h2>
     <div  class="prise">
@@ -213,7 +213,7 @@
      <p >Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите <br>настоящий крафтовый квас сейчас. При заказе от 10
          баррелей — скидка 10%.
      </p>
-     <form class = "form-order" action = "/-mail" method = "post">
+     <form class = "form-order" action = "" method = "post">
         <div class = "form-order-group">
             <label for="name"> Представьтесь: </label>
             <input type = "text" name = "name" id="name"
@@ -241,8 +241,9 @@
            <label id="com" for = "comment">Доп. комментарий:</label>
             <textarea name = "comment" id = "comment" placeholder="Сообщите нам всё, что считаете нужным"></textarea>
         </div>
-        <div class = "checkbox"><label id="agree" for="check">
-            <input type = "checkbox" id = 'check'></label>
+        <div class = "checkbox">
+            <input type = "checkbox" id = 'check' checked>
+            <label for="check"></label>
             <span>Я согласен получать квасную рассылку</span>
         </div>
         <input type = "submit" value = "Отправить заказ">
@@ -265,15 +266,9 @@
   <div class = "social">
       <p>Наши соц-сети:</p>
       <div class="social-btn">
-    <a href = "https://instagram.com">
-        <img src="img/logoinst.png" alt="Инстаграм">
-    </a>
-    <a href = "https://facebook.com">
-        <img src="img/logoface.png" alt="Фейсбук">
-    </a>
-    <a href = "https://vk.com">
-        <img src="img/logovk.png" alt="Вконтакте">
-    </a>
+    <a class="izoinst" href = "https://instagram.com"></a>
+    <a class="izof" href = "https://facebook.com"></a>
+    <a class="izovk" href = "https://vk.com"></a>
   </div>
  </div>
  </div>
