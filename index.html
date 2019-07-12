@@ -19,15 +19,15 @@
       <li><a href = "#prise-list">Ассортимент</a></li>
       <li><a href = "#form">Где купить</a></li>
      </ul>
-   </div> 
-  <div class = "promo change">
-    Крафтовый квас<br>
-      всему голова!
+   </div>
+          <div class="promo" id="box1" style="display: block;">Крафтовый квас<br>всему голова!</div>
+          <div class="promo" id="box2" style="display: none;">Крафтовый квас<br> всему голова, а <br>некоторым и тело!</div>
+          <div class="promo" id="box3" style="display: none;">Крафтовый квас<br> всему голова, а <br>хлеб тоже!</div>
   </div>
      <div class="switch">
-         <a class="slide-icon" href="#" id="0" data-shit="asd"></a>
-         <a class="slide-icon" href="#" id="1"></a>
-         <a class="slide-icon" href="#" id="2"></a>
+         <a href="#" onclick="openbox('box1')">one</a>
+         <a href="#" onclick="openbox('box2')">two</a>
+         <a href="#" onclick="openbox('box3')">three</a>
      </div>
           <script src="js/script.js"></script>
   </div>

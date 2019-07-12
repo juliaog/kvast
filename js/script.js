@@ -1,20 +1,13 @@
-var mass = [
-    'Крафтовый квас <br> всему голова',
-    'Крафтовый квас <br> всему голова,а некоторым и тело!',
-    'Крафтовый квас <br> всему голова, а хлеб тоже'
-];
+function openbox(id) {
+    var all = document.querySelectorAll(".promo");
+    for (var i = 0; i < all.length; i++) {
+        if (all[i].id === id) {
+            all[i].style.display = 'block';
+        } else {
+            all[i].style.display = 'none';
+        }
 
-var texts = document.querySelectorAll('.slide-icon');
-var oneText = document.querySelector('.change');
-
-console.log(this);
-
-function onSlideIconClick() {
-
-}
-
-for (var i = 0; i < texts.length; i++) {
-
+    }
 }
 
 
