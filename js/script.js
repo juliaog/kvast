@@ -2,9 +2,11 @@ function openbox(id) {
     var all = document.querySelectorAll(".promo");
     for (var i = 0; i < all.length; i++) {
         if (all[i].id === id) {
-            all[i].active.display = 'block';
-        } else {
-            all[i].active.display = 'none';
+            all[i].classList.add("active");
+        }
+        else {
+            all[i].classList.remove("active");
+            all[i].classList.add("promo");
         }
     }
 }
