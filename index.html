@@ -13,33 +13,32 @@
     <div class = "header-logo">
      <img src = img/logo.png alt = "Кваст">
     </div>
-     <ul class = "main-nav ">
-      <li><a href = "#">История</a></li>
-      <li><a href = "#">Производство</a></li>
-      <li><a href = "#">Ассортимент</a></li>
-      <li><a href = "#">Где купить</a></li>
+     <ul class = "main-nav">
+      <li><a href = "#history">История</a></li>
+      <li><a href = "#features">Производство</a></li>
+      <li><a href = "#price-list">Ассортимент</a></li>
+      <li><a href = "#form">Где купить</a></li>
      </ul>
-   </div> 
-  <div class = "promo change">
-    Крафтовый квас<br>
-      всему голова!
+   </div>
+          <div class="promo active" id="box1">Крафтовый квас<br>всему голова!</div>
+          <div class="promo" id="box2">Крафтовый квас<br> всему голова, а <br>некоторым и тело!</div>
+          <div class="promo" id="box3">Крафтовый квас<br> всему голова, а <br>хлеб тоже!</div>
   </div>
      <div class="switch">
-         <a class="slide-icon" href="#" id="0" data-shit="asd"></a>
-         <a class="slide-icon" href="#" id="1"></a>
-         <a class="slide-icon" href="#" id="2"></a>
+         <a href="#" onclick="openbox('box1')">one</a>
+         <a href="#" onclick="openbox('box2')">two</a>
+         <a href="#" onclick="openbox('box3')">three</a>
      </div>
-          <script src="js/script.js"></script>
   </div>
   </div>
 
 
   <div class = "new-kvast">
+      <div class="container">
     <h2>Новинки</h2>
     <div class = "new">
-      <div class = "kvast-vaxter">
-       <h3>Вахтёр</h3>
-       <table class = "description-new">
+      <div class = "item-kvast kvast-vaxter">
+       <table class="table-item">
         <tr>
           <td>Алк. </td>
           <td>&lt; 1%</td>
@@ -49,17 +48,21 @@
           <td>35</td>
         </tr>
       </table>
-       <p>Ржаной хлеб, Вода, Солод, Соль</p>
-       <img src = "img/bottle-left.jpg" alt = "Квас-Вахтер">     
-       <p>Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних приключений!</p>
-       <a class = "btn" href = "#">Подробнее</a>
-       <a class = "btn" href = "#">Купить</a>
+       <p class="description-new comm">Ржаной хлеб, Вода,<br> Солод, Соль</p>
+       <img src = "img/bottle-left.jpg" alt = "Квас-Вахтер">
+       <div class="new-footer">
+       <h3 class="new-name">Вахтёр</h3>
+       <p>Терпкий и мощный, вкус этого кваса <br>
+           взбодрит после тяжёлого дня и придаст сил <br>
+           для вечерних приключений!</p>
+       </div>
+       <a class = "btn1" href = "#">Подробнее</a>
+       <a class = "btn2" href = "#">Купить</a>
        <b>150 Р.</b>
       </div>
       
-      <div class = "new-romantik">
-       <h3>Романтик</h3>
-       <table class = "description-new">
+      <div class = "item-kvast new-romantik">
+       <table class="table-item">
         <tr>
           <td>Алк.</td>
           <td>&lt; 0,5%</td>
@@ -69,75 +72,99 @@
           <td>27</td>
         </tr>
       </table> 
-       <p>Ячменный хлеб, Вода, Солод, Апельсин</p>
-       <img src = "img/bottle-right.jpg" alt = "Квас-Романтик">     
-       <p>Лёгкий и освежающий напиток поможет сохранять отличное настроение в течение всего дня.</p>
-       <a class = "btn" href = "#">Подробнее</a>
-       <a class = "btn" href = "#">Купить</a>
-       <b>90 Р.</b>      
+       <p class="description-new comm">Ячменный хлеб, Вода,<br> Солод, Апельсин</p>
+       <img src = "img/bottle-right.jpg" alt = "Квас-Романтик">
+       <div class="new-footer">
+       <h3 class="new-name">Романтик</h3>
+       <p>Лёгкий и освежающий напиток <br>
+           поможет сохранять отличное настроение <br>
+           в течение всего дня.</p>
+      </div>
+       <a class = "btn1" href = "#">Подробнее</a>
+       <a class = "btn2" href = "#">Купить</a>
+       <b id="features">90 Р.</b>
       </div>
     </div>
+      </div>
   </div>
 
 
-  <div class = "features">
-  <ul>
-   <li class = "feature-item">
-    <h2>Варим сами</h2>
+  <div  class = "features">
+      <div class="container">
+  <ul class="feature-item">
+   <li >
+    <img src="img/pic1.png" alt="">
+    <h4>Варим сами</h4>
     <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
    </li>
-   <li class = "feature-item">
-    <h2>Своё, родное</h2>
+   <li>
+    <img src="img/pic2.png" alt="">
+    <h4>Своё, родное</h4>
     <p>Не заработка ради, а импортозамещения для. Поднимаем производство.</p>
    </li>
-   <li class = "feature-item">
-    <h2>Не экономим</h2>
-    <p>Человек это то, что он ест и пьет. У нас только качественные ингредиенты.</p>
+   <li>
+   <img src="img/pic3.png" alt="">
+    <h4>Не экономим</h4>
+    <p id ="history">Человек это то, что он ест и пьет. У нас только качественные ингредиенты.</p>
    </li>
   </ul>
   </div>
+  </div>
 
 
- <div class = "history">
+ <div  class = "history">
+     <div class="container">
    <h2>Немного истории</h2>
-     <dl>
-      <dt><h3>Происхождение кваса</h3>
-          <i>Источник: </i><a target="_blank" href="https://ru.wikipedia.org">ru.wikipedia.org</a>
-      </dt>
-         <dd>
-             <img src = "img/wiki-1.png" alt = "Википедия картинка1">
-             <p>Квас на Руси появился в X-XI веке. Само слово «квас» тоже имеет древнерусское происхождение. Помимо России квас готовят в Белоруссии,<br>
-                 Сербии, Македонии, Словакии и многих других странах, но называется он везде одинаково — квас.</p>
-         </dd>
-      <dt>
-          <h3>Классификация кваса</h3>
-          <i>Источник: </i><a target="_blank" href="https://ru.wikipedia.org">ru.wikipedia.org</a>
-      </dt>
-          <dd>
-              <img src = "img/wiki-2.png" alt = "Википедия картинка2">
-              <p>По российскому ГОСТу для промышленного изготовления — это напиток с объёмной долей этилового спирта не более 1,2%, изготовленный в<br>
-                  результате незавершённого спиртового и молочнокислого брожения сусла.
+         <div class="history-item">
+     <div class="link">
+         <div class="ist"><i>Источник: </i><a target="_blank" href="https://ru.wikipedia.org">ru.wikipedia.org</a></div>
+         <img src = "img/wiki-1.png" alt = "Википедия картинка1">
+     </div>
+     <div class="description">
+         <h3>Происхождение кваса</h3>
+             <p>Квас на Руси появился в X-XI веке. Само слово «квас» тоже <br>
+                 имеет древнерусское происхождение. Помимо России квас<br>
+                 готовят в Белоруссии, Сербии, Македонии, Словакии и многих<br>
+                 других странах, но называется он везде одинаково — квас.</p>
+     </div>
+         <div class="link">
+             <div class="ist ist-last"><i class="ist">Источник: </i><a  target="_blank" href="https://ru.wikipedia.org">ru.wikipedia.org</a></div>
+         <img src = "img/wiki-2.png" alt = "Википедия картинка2">
+         </div>
+         <div class="description">
+         <h3>Классификация кваса</h3>
+         <p>По российскому ГОСТу для промышленного изготовления —
+                  это <br>напиток с объёмной долей этилового спирта не более
+                  1,2%, <br>изготовленный в результате незавершённого спиртового
+                  и <br>молочнокислого брожения сусла.
               </p>
-          </dd>
-
-     </dl>
+         </div>
+     </div>
+     </div>
  </div>
 
 
  <div class = "press">
+     <div class ="press_comm container">
      <h2>Пресса о нас</h2>
-     <blockquote class = "press-item">
-        <p>Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса. Да, да, вы не ослышались! Спасибо Арсену и <br>
-            Руслану за то, что предоставили целую бочку своего напитка!</p>
-            <cite>Газета столичный Стольник</cite>
-            <a class = "btn" href="#">Читать далее</a>
-     </blockquote>
+        <p class = "press-item">Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса.<br>
+            Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку<br> своего напитка!</p>
+            <a class = "btn1" href="#">Читать далее</a>
+            <p class = "quotation">Газета "Cтоличный Стольник"</p>
+ </div>
  </div>
 
 
- <div class = "prise-list">
+ <div id="price-list"  class = "price-list">
+     <div class="container">
     <h2>Ассортимент</h2>
-    <table class = "prise">
+    <div  class="price">
+    <table>
+        <col width="410px">
+        <col width="60px">
+        <col width="60px">
+        <col width="100px">
+        <col width="200px">
       <tr>
           <th>Название</th>
           <th>Алк.</th>
@@ -174,78 +201,76 @@
           <td>90 Р.</td>
       </tr>
     </table>
+     </div>
+ </div>
  </div>
 
 
- <div class = "form">
+ <div id="form" class = "form">
+     <div class="container">
      <h2>Заказать</h2>
-     <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 <br>
+     <p >Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите <br>настоящий крафтовый квас сейчас. При заказе от 10
          баррелей — скидка 10%.
      </p>
-     <form class = "form-order" action = "/keksby-mail" method = "post">
+     <form class = "form-order" action = "" method = "post">
         <div class = "form-order-group">
-            <label>
-                Представьтесь: <input type = "text" name = "name">
-            </label>
+            <label for="name"> Представьтесь: </label>
+            <input type = "text" name = "name" id="name"
+                   placeholder="Как мы можем к вам обращаться?" required>
         </div>
         <div class = "form-order-group">
-            <label>
-                Номер телефона: <input type = "text" name = "phone">
-            </label>
+            <label for="phone">Номер телефона:</label>
+            <input type = "text" name = "phone" id="phone" placeholder="+7(XXX)XXX-XX-XX">
+            <label class="second_phone" for="phone2">Доп. номер:</label>
+            <input type = "text" name = "phone2" id="phone2" placeholder="+7(XXX)XXX-XX-XX">
+         </div>
+        <div class = "form-order-group group-email">
+            <label for="email">Email:</label>
+            <input type = "text" name = "email" id="email" placeholder="Ваша электронная почта" required>
         </div>
-        <div class = "form-order-group">
-            <label>
-                Доп. номер: <input type = "text" name = "phone2">
-            </label>
-        </div>
-        <div class = "form-order-group">
-            <label>
-                Email: <input type = "text" name = "email">
-            </label>
-        </div>
-        <div class = "form-order-group">
+        <div class = "form-order-group ">
             <label for = "amount">Объем заказа:</label>
             <select name = "amount" id = "amount">
                 <option>От 5 до 10 баррелей в неделю</option>
+                <option>Возврат товара</option>
+                <option>Жалоба в Роспотребнадзор</option>
             </select>
         </div>
         <div class = "form-order-group">
-           <label for = "comment">Доп. комментарий:</label>
-            <textarea name = "comment" id = "comment" rows = 10 cols = "96"></textarea>
+           <label id="com" for = "comment">Доп. комментарий:</label>
+            <textarea name = "comment" id = "comment" placeholder="Сообщите нам всё, что считаете нужным"></textarea>
         </div>
-        <div class = "checkbox-area">
-            <label>
-            <input type = "checkbox" id = 'check'>
-            Я согласен получать квасную рассылку
-            </label>
+        <div class = "checkbox">
+            <input type = "checkbox" id = 'check' checked>
+            <label for="check"></label>
+            <span>Я согласен получать квасную рассылку</span>
         </div>
         <input type = "submit" value = "Отправить заказ">
      </form>
   </div>
+ </div>
 
  <div class = "page-footer">
-   <div class = "header-top">
-    <div class = "header-logo">
+   <div class = " container">
+    <div class = "footer-logo">
      <img src = img/logo.png alt = "Кваст">
     </div>
-     <ul class = "main-nav-footer">
-       <li><a href = "#">История</a></li>
-       <li><a href = "#">Производство</a></li>
-       <li><a href = "#">Ассортимент</a></li>
-       <li><a href = "#">Где купить</a></li>
+     <ul class = "main-nav main-nav-footer">
+         <li><a href = "#history">История</a></li>
+         <li><a href = "#features">Производство</a></li>
+         <li><a href = "#price-list">Ассортимент</a></li>
+         <li><a href = "#form">Где купить</a></li>
      </ul>
    </div>
   <div class = "social">
-    <a href = "https://instagram.com">Инстаграм</a>
-    <a href = "https://facebook.com">Фейсбук</a>
-    <a href = "https://vk.com">Вконтакте</a>
-  </div>
-  <p class = "text-footer">При перепечатке материалов ссылка на сайт обязательна!</p>
-  <div class ="razrab">
-     <img src = "img/htmlacademy.png">
-     <b>Разработчик:</b>
-     <a href ="https://htmlacademy.ru"> HTML Academy</a>
+      <p>Наши соц-сети:</p>
+      <div class="social-btn">
+    <a class="izoinst" href = "https://instagram.com"></a>
+    <a class="izof" href = "https://facebook.com"></a>
+    <a class="izovk" href = "https://vk.com"></a>
   </div>
  </div>
+ </div>
+ <script src="js/script.js"></script>
 </body>
 </html>
