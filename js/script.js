@@ -6,7 +6,6 @@ function openbox(id) {
         }
         else {
             all[i].classList.remove("active");
-            all[i].classList.add("promo");
         }
     }
 }
