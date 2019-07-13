@@ -12,6 +12,7 @@ body{
     min-height: 600px;
     padding-top: 50px;
     background: url("../img/background.jpg") no-repeat center;
+
 }
 .container{
     width: 900px;
@@ -20,6 +21,7 @@ body{
 .header-logo,
 .footer-logo{
     float: left;
+    margin-left: 50px;
 }
 .clearfix::after{
     display: table;
@@ -30,11 +32,13 @@ body{
     margin-bottom: 109px;
 }
 .promo {
+    min-height: 290px;
     display: none;
     margin-left: -70px;
     color: #ffffff;
     font-size: 72px;
     text-align: center;
+    vertical-align: middle;
     font-weight: 700;
     line-height: 72px;
 }
@@ -72,12 +76,7 @@ body{
     margin-right: 30px;
 }
 .switch{
-    position: absolute;
-    top: 530px;
-    left: 760px;
-}
-.switch a{
-    text-align: center;
+text-align: center;
 }
 .switch a{
     display: inline-block;
@@ -94,12 +93,15 @@ body{
     box-shadow: 0 0 5px 0 black;
 }
 
+
 .new-kvast{
     margin-top: 97px;
 }
 .new{
     display: flex;
     margin-top: 107px;
+    margin-left: 50px;
+
 }
 h2{
     font-size: 36px;
@@ -107,6 +109,7 @@ h2{
     text-shadow:
             2px 8px 6px rgba(0,0,0,0.2),
             0 -5px 35px rgba(255,255,255,0.3);
+    margin-left: 50px;
 }
 .item-kvast{
     width: 343px;
@@ -177,10 +180,10 @@ h2{
     color: white;
     margin-right: 30px;
 }
-
 b{
     font-size: 15px;
 }
+
 
 .features{
     height: 400px;
@@ -211,23 +214,30 @@ b{
 }
 .feature-item li:last-child{
     border-right: none;
-    padding-right: 0px;
+    padding-right: 0;
 }
 @keyframes rotate {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+    0% {-moz-transform: rotate(0deg);
+         transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);
+           transform: rotate(360deg);}
 }
 .feature-item img:hover{
-    animation-name: rotate;
-    animation-duration: 2s;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 2s;
+     animation-name: rotate;
+     animation-duration: 2s;
 }
 
 .history{
     height: 517px;
     margin-top: 87px;
+
 }
 .history-item{
     margin-top: 100px;
+    position: relative;
+    margin-left: 50px;
 }
 
 .description h3{
@@ -240,7 +250,7 @@ b{
 }
 .link{
     position: absolute;
-    right: 515px;
+    left: 600px;
 }
 .link img{
     margin-top:37px;
@@ -253,6 +263,7 @@ b{
 .ist a:visited{
     color: #800080;
 }
+
 
 .press{
      background: #ede5d8;
@@ -267,6 +278,7 @@ b{
 .form p{
     color: #434446;
     line-height: 32px;
+    margin-left: 50px;
 }
 .press_comm .btn1{
     width: 166px;
@@ -276,6 +288,7 @@ b{
     border-color: #a69f95;
     color: #c0b8ad;
     background-color: #ede5d8 ;
+    margin-left: 50px;
 }
 .press_comm .btn1:hover{
     font-weight: bold;
@@ -284,7 +297,7 @@ b{
 }
 .press_comm .quotation{
     float: right;
-    margin-right: 128px;
+    margin-right: 120px;
     padding-top: 8px;
     color: black;
     text-transform: uppercase;
@@ -305,6 +318,7 @@ b{
     margin-top:105px;
     text-transform: uppercase;
     border-collapse: collapse;
+    margin-left: 50px;
 }
 th{
     display: table-cell;
@@ -362,6 +376,7 @@ td:nth-child(2),td:nth-child(3),td:nth-child(4)
     line-height: 50px;
     width: 199px;
     height: 50px;
+    margin-left: 50px;
 }
 .form-order-group{
     margin-bottom: 10px;
@@ -431,7 +446,7 @@ input:checked + label:before {
     font-size: 36px;
     text-align: center;
     vertical-align: middle;
-    box-shadow: 0px 0px 5px 0 black;
+    box-shadow: 0 0 5px 0 black;
 }
 span{
     margin-left: 60px;
@@ -452,7 +467,7 @@ span{
     height: 55px;
     background-color: #834700;
     color: white;
-    margin: 10px 0 0 200px ;
+    margin: 10px 0px 0 250px ;
     box-shadow: 5px 5px 15px 0 black;
 }
 .form-order input[type="submit"]:active{
@@ -476,11 +491,13 @@ span{
      width: 76px;
      height: 67px;
      transition: 1s ease 0.5s;
+     -moz-transition: 1s ease 0.5s;
 }
 .izoinst:hover {
     background-size: cover;
     background: url("../img/Instagram_logo.png") no-repeat 50% 50%;
     transition: 1s;
+    -moz-transition-duration: 1s;
 }
 .izof{
     background: url("../img/logoface.png") no-repeat 50% 50%;
@@ -488,11 +505,13 @@ span{
     width: 76px;
     height: 67px;
     transition: 1s ease 0.5s;
+    -moz-transition: 1s ease 0.5s;
 }
 .izof:hover {
     background-size: cover;
     background: url("../img/facebook.png") no-repeat 50% 50%;
     transition: 1s;
+    -moz-transition: 1s;
 }
 .izovk {
     background: url("../img/logovk.png") no-repeat 50% 50%;
@@ -500,17 +519,19 @@ span{
     width: 76px;
     height: 67px;
     transition: 1s ease 0.5s;
+    -moz-transition: 1s ease 0.5s;
 }
 .izovk:hover {
     background-size: cover;
     background: url("../img/vk.png") no-repeat 50% 50%;
     transition: 1s;
+    -moz-transition: 1s;
 }
 .social{
-    position: absolute;
-    top: 170px;
-    width: 400px;
-    left: 420px;
+    display: flex;
+    margin-top: 120px;
+    margin-right: 400px;
+    justify-content: center;
 }
 .social-btn{
     display: flex;
