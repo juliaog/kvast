@@ -288,7 +288,7 @@ b{
 }
 .press_comm .quotation{
     float: right;
-    margin-right: 120px;
+    margin-right: 128px;
     padding-top: 8px;
     color: black;
     text-transform: uppercase;
@@ -432,6 +432,8 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 input:checked + label:before {
+    -moz-appearance: initial;
+    -webkit-appearance: initial;
     content: '\1F5F8';
     font-size: 36px;
     text-align: center;
@@ -457,7 +459,7 @@ span{
     height: 55px;
     background-color: #834700;
     color: white;
-    margin: 10px 0px 0 250px ;
+    margin: 10px 0 0 250px;
     box-shadow: 5px 5px 15px 0 black;
 }
 .form-order input[type="submit"]:active{
@@ -476,46 +478,71 @@ span{
     border: none;
 }
 .izoinst {
-     background: url("../img/logoinst.png") no-repeat 50% 50%;
-     display: block;
-     width: 76px;
+     background: url("../img/logoinst.png");
+     display: inline-block;
+     width: 75px;
      height: 67px;
-     transition: 1s ease 0.5s;
-     -moz-transition: 1s ease 0.5s;
 }
-.izoinst:hover {
+.izoinst::after {
+    content: '';
+    display: inline-block;
     background-size: cover;
-    background: url("../img/Instagram_logo.png") no-repeat 50% 50%;
-    transition: 1s;
-    -moz-transition-duration: 1s;
+    background: black url("../img/Instagram_logo.png") no-repeat 50% 50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
 }
-.izof{
-    background: url("../img/logoface.png") no-repeat 50% 50%;
-    display: block;
-    width: 76px;
+.izoinst:hover::after{
+    opacity: 1;
+}
+.izof {
+    background: url("../img/logoface.png");
+    display: inline-block;
+    width: 75px;
     height: 67px;
-    transition: 1s ease 0.5s;
-    -moz-transition: 1s ease 0.5s;
 }
-.izof:hover {
+.izof::after{
+    content: '';
+    display: inline-block;
     background-size: cover;
-    background: url("../img/facebook.png") no-repeat 50% 50%;
-    transition: 1s;
-    -moz-transition: 1s;
+    background:black url("../img/facebook.png") no-repeat 50% 50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+}
+.izof:hover::after{
+    opacity: 1;
 }
 .izovk {
-    background: url("../img/logovk.png") no-repeat 50% 50%;
-    display: block;
+    background: url("../img/logovk.png");
+    display: inline-block;
     width: 76px;
     height: 67px;
     transition: 1s ease 0.5s;
-    -moz-transition: 1s ease 0.5s;
 }
-.izovk:hover {
+.izovk::after{
+    content: '';
+    display: inline-block;
     background-size: cover;
-    background: url("../img/vk.png") no-repeat 50% 50%;
-    transition: 1s;
-    -moz-transition: 1s;
+    background:black url("../img/vk.png") no-repeat 50% 50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+}
+.izovk:hover::after{
+    opacity: 1;
 }
 .social{
     display: flex;
@@ -529,7 +556,6 @@ span{
 .social a{
      font-size: 0;
      text-decoration: none;
-     margin-left:-3px;
  }
 .social p {
     color: #7d7d7d;
