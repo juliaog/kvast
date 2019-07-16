@@ -294,9 +294,12 @@ b{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
+    vertical-align: middle;
 }
 .press_comm .quotation:before{
-    content: '\1F56E';
+    content: '\2711';
+    font-size: 24px;
+    vertical-align: middle;
     margin-right: 10px;
 }
 
@@ -418,6 +421,7 @@ td:nth-child(2),td:nth-child(3),td:nth-child(4)
     position: relative;
     margin-top: 50px;
     vertical-align: middle;
+
 }
 input[type="checkbox"]{
      display: none;
@@ -431,13 +435,9 @@ input[type="checkbox"]{
     margin-left: 200px;
     cursor: pointer;
 }
-input:checked + label:before {
-    -moz-appearance: initial;
-    -webkit-appearance: initial;
-    content: '\1F5F8';
-    font-size: 36px;
-    text-align: center;
-    vertical-align: middle;
+input:checked + label:before{
+    background: url("../img/black-check.png") no-repeat;
+    background-size: 40px 40px;
     box-shadow: 0 0 5px 0 black;
 }
 span{
